@@ -16,3 +16,5 @@ IonicのCSSコンポーネント確認用に用意しました。
 
 ##リンク
 - <a href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04ti0000000LH6K">Package</a>
+  
+<img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20140607/20140607131323.png" />

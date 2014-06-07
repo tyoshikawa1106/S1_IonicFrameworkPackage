@@ -3,6 +3,7 @@ S1_IonicFrameworkPackage
 
 Salesforce1アプリ開発で使えるIonicFrameworkのサンプルパッケージです。  
 IonicのCSSコンポーネント確認用に用意しました。  
+Salesforce1で動かすときは設定のモバイルナビゲーションから表示設定してください。
   
 <img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20140607/20140607124256.png" />  
 

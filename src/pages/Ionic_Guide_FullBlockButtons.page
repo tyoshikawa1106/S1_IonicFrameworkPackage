@@ -1,0 +1,42 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <ion-view title="Ionic Guide - Full Block Buttons">
+        <ion-nav-buttons side="left">
+            <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+        </ion-nav-buttons>
+        <ion-content class="has-header padding-top">
+            <button class="button button-full">
+                Default
+            </button>
+            <button class="button button-full button-light">
+                button-light
+            </button>
+            <button class="button button-full button-stable">
+                button-stable
+            </button>
+            <button class="button button-full button-positive">
+                button-positive
+            </button>
+            <button class="button button-full button-calm">
+                button-calm
+            </button>
+            <button class="button button-full button-balanced">
+                button-balanced
+            </button>
+            <button class="button button-full button-energized">
+                button-energized
+            </button>
+            <button class="button button-full button-assertive">
+                button-assertive
+            </button>
+            <button class="button button-full button-royal">
+                button-royal
+            </button>
+            <button class="button button-full button-dark">
+                button-dark
+            </button>
+        </ion-content>
+        <div class="bar bar-footer bar-positive">
+            <div class="title">Force.com</div>
+        </div>
+    </ion-view>
+</apex:page>

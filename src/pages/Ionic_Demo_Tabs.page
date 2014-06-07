@@ -1,0 +1,20 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    
+    <ion-tabs class="tabs-positive tabs-icon-top">
+    
+        <!-- AccountList Page -->
+        <ion-tab title="Accounts" icon="icon ion-briefcase" href="#/tab/accounts">
+            <ion-nav-view name="tab-accounts"></ion-nav-view>
+        </ion-tab>
+        
+        <!-- ContactList Page -->
+        <ion-tab title="Contacts" icon="icon ion-chatbubble-working" href="#/tab/contacts">
+            <ion-nav-view name="tab-contacts"></ion-nav-view>
+        </ion-tab>
+        
+        <!-- UserList Page -->
+        <ion-tab title="Users" icon="icon ion-person-stalker" href="#/tab/users">
+            <ion-nav-view name="tab-users"></ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+</apex:page>

@@ -1,0 +1,45 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <ion-view title="Ionic Guide - Card Headers and Footers">
+        <ion-nav-buttons side="left">
+            <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+        </ion-nav-buttons>
+        <ion-content class="has-header">
+            <div class="card">
+                <div class="item item-divider">
+                    I'm a Header in a Card!
+                </div>
+                <div class="item item-text-wrap">
+                    This is a basic Card with some text.
+                </div>
+                <div class="item item-divider">
+                    I'm a Footer in a Card!
+                </div>
+            </div>
+            <div class="card">
+                <div class="item item-divider">
+                    I'm a Header in a Card!
+                </div>
+                <div class="item item-text-wrap">
+                    This is a basic Card with some text.
+                </div>
+                <div class="item item-divider">
+                    I'm a Footer in a Card!
+                </div>
+            </div>
+            <div class="card">
+                <div class="item item-divider">
+                    I'm a Header in a Card!
+                </div>
+                <div class="item item-text-wrap">
+                    This is a basic Card with some text.
+                </div>
+                <div class="item item-divider">
+                    I'm a Footer in a Card!
+                </div>
+            </div>
+        </ion-content>
+        <div class="bar bar-footer bar-positive">
+            <div class="title">Force.com</div>
+        </div>
+    </ion-view>
+</apex:page>

@@ -1,0 +1,38 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <ion-view title="Ionic Guide - Checkbox">
+        <ion-nav-buttons side="left">
+            <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+        </ion-nav-buttons>
+        <ion-content class="has-header">
+            <ul class="list">
+                <li class="item item-checkbox">
+                    <label class="checkbox">
+                        <input type="checkbox" />
+                    </label>
+                    Flux Capacitor
+                </li>
+                <li class="item item-checkbox">
+                    <label class="checkbox checkbox-positive">
+                        <input type="checkbox" />
+                    </label>
+                    1.21 Gigawatts
+                </li>
+                <li class="item item-checkbox">
+                    <label class="checkbox checkbox-calm">
+                        <input type="checkbox" />
+                    </label>
+                    Delorean
+                </li>
+                <li class="item item-checkbox">
+                    <label class="checkbox checkbox-balanced">
+                        <input type="checkbox" />
+                    </label>
+                    88 MPH
+                </li>
+            </ul>
+        </ion-content>
+        <div class="bar bar-footer bar-positive">
+            <div class="title">Force.com</div>
+        </div>
+    </ion-view>
+</apex:page>

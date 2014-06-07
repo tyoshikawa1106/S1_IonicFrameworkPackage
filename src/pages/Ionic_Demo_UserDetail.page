@@ -1,0 +1,43 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <ion-view title="{{user.Name}}">
+        <ion-content has-header="true" padding="false">
+            <ion-list>
+                <!-- Name -->
+                <ion-item type="item-text-wrap" >
+                    <h5><apex:outputText value="{!$ObjectType.User.Fields.Name.Label}" /></h5>
+                    <h2><apex:outputText value="{{user.Name}}" /></h2>
+                </ion-item>
+                <!-- Department -->
+                <ion-item type="item-text-wrap" >
+                    <h5><apex:outputText value="{!$ObjectType.User.Fields.Department.Label}" /></h5>
+                    <h2><apex:outputText value="{{user.Department}}" /></h2>
+                </ion-item>
+                <!-- Title -->
+                <ion-item type="item-text-wrap" >
+                    <h5><apex:outputText value="{!$ObjectType.User.Fields.Title.Label}" /></h5>
+                    <h2><apex:outputText value="{{user.Title}}" /></h2>
+                </ion-item>
+                <!-- CommunityNickname -->
+                <ion-item type="item-text-wrap" >
+                    <h5><apex:outputText value="{!$ObjectType.User.Fields.CommunityNickname.Label}" /></h5>
+                    <h2><apex:outputText value="{{user.CommunityNickname}}" /></h2>
+                </ion-item>
+                <!-- CompanyName -->
+                <ion-item type="item-text-wrap" >
+                    <h5><apex:outputText value="{!$ObjectType.User.Fields.CompanyName.Label}" /></h5>
+                    <h2><apex:outputText value="{{user.CompanyName}}" /></h2>
+                </ion-item>
+                <!-- LanguageLocaleKey -->
+                <ion-item type="item-text-wrap" >
+                    <h5><apex:outputText value="{!$ObjectType.User.Fields.LanguageLocaleKey.Label}" /></h5>
+                    <h2><apex:outputText value="{{user.LanguageLocaleKey}}" /></h2>
+                </ion-item>
+                <!-- LocaleSidKey -->
+                <ion-item type="item-text-wrap" >
+                    <h5><apex:outputText value="{!$ObjectType.User.Fields.LocaleSidKey.Label}" /></h5>
+                    <h2><apex:outputText value="{{user.LocaleSidKey}}" /></h2>
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-view>
+</apex:page>

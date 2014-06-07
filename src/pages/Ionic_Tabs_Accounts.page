@@ -1,0 +1,15 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <ion-view title="Accounts">
+        <ion-content class="has-header">
+            <div class="list">
+                <div ng-repeat="account in accounts">
+                    <a class="item item-avatar" href="#/tab/accounts/{{account.Id}}">
+                        <img src="{{account.PhotoUrl}}" />
+                        <h2><apex:outputText value="{{account.Name}}" /></h2>
+                        <p><apex:outputText value="{{account.Phone}}" /></p>
+                    </a>
+                </div>
+            </div>
+        </ion-content>
+    </ion-view>
+</apex:page>

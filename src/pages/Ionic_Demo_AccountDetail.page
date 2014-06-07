@@ -1,0 +1,88 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <ion-view title="{{account.Name}}">
+        <ion-content has-header="true" padding="false">
+            <ion-list>
+                <!-- Name -->
+                <ion-item type="item-text-wrap" >
+                    <h5><apex:outputText value="{!$ObjectType.Account.Fields.Name.Label}" /></h5>
+                    <h2><apex:outputText value="{{account.Name}}" /></h2>
+                </ion-item>
+                <!-- AccountNumber -->
+                <ion-item type="item-text-wrap" >
+                    <h5><apex:outputText value="{!$ObjectType.Account.Fields.AccountNumber.Label}" /></h5>
+                    <h2><apex:outputText value="{{account.AccountNumber}}" /></h2>
+                </ion-item>
+                <!-- Site -->
+                <ion-item type="item-text-wrap" >
+                    <h5><apex:outputText value="{!$ObjectType.Account.Fields.Site.Label}" /></h5>
+                    <h2><apex:outputText value="{{account.Site}}" /></h2>
+                </ion-item>
+                <!-- Type -->
+                <ion-item type="item-text-wrap" >
+                    <h5><apex:outputText value="{!$ObjectType.Account.Fields.Type.Label}" /></h5>
+                    <h2><apex:outputText value="{{account.Type}}" /></h2>
+                </ion-item>
+                <!-- Rating -->
+                <ion-item type="item-text-wrap" >
+                    <h5><apex:outputText value="{!$ObjectType.Account.Fields.Rating.Label}" /></h5>
+                    <h2><apex:outputText value="{{account.Rating}}" /></h2>
+                </ion-item>
+                <!-- Phone -->
+                <ion-item type="item-text-wrap" >
+                    <h5><apex:outputText value="{!$ObjectType.Account.Fields.Phone.Label}" /></h5>
+                    <h2><apex:outputText value="{{account.Phone}}" /></h2>
+                </ion-item>
+                <!-- Fax -->
+                <ion-item type="item-text-wrap" >
+                    <h5><apex:outputText value="{!$ObjectType.Account.Fields.Fax.Label}" /></h5>
+                    <h2><apex:outputText value="{{account.Fax}}" /></h2>
+                </ion-item>
+                <!-- Industry -->
+                <ion-item type="item-text-wrap" >
+                    <h5><apex:outputText value="{!$ObjectType.Account.Fields.Industry.Label}" /></h5>
+                    <h2><apex:outputText value="{{account.Industry}}" /></h2>
+                </ion-item>
+                <!-- Website -->
+                <ion-item type="item-text-wrap">
+                    <h5><apex:outputText value="{!$ObjectType.Account.Fields.Website.Label}" /></h5>
+                    <h2><apex:outputText value="{{account.Website}}" /></h2>
+                </ion-item>
+                <!-- NumberOfEmployees -->
+                <ion-item type="item-text-wrap">
+                    <h5><apex:outputText value="{!$ObjectType.Account.Fields.NumberOfEmployees.Label}" /></h5>
+                    <h2><apex:outputText value="{{account.NumberOfEmployees}}" /></h2>
+                </ion-item>
+                <!-- AnnualRevenue -->
+                <ion-item type="item-text-wrap">
+                    <h5><apex:outputText value="{!$ObjectType.Account.Fields.AnnualRevenue.Label}" /></h5>
+                    <h2><apex:outputText value="{{account.AnnualRevenue}}" /></h2>
+                </ion-item>
+                <!-- BillingCountry -->
+                <ion-item type="item-text-wrap">
+                    <h5><apex:outputText value="{!$ObjectType.Account.Fields.BillingCountry.Label}" /></h5>
+                    <h2><apex:outputText value="{{account.BillingCountry}}" /></h2>
+                </ion-item>
+                <!-- BillingPostalCode -->
+                <ion-item type="item-text-wrap">
+                    <h5><apex:outputText value="{!$ObjectType.Account.Fields.BillingPostalCode.Label}" /></h5>
+                    <h2><apex:outputText value="{{account.BillingPostalCode}}" /></h2>
+                </ion-item>
+                <!-- BillingState -->
+                <ion-item type="item-text-wrap">
+                    <h5><apex:outputText value="{!$ObjectType.Account.Fields.BillingState.Label}" /></h5>
+                    <h2><apex:outputText value="{{account.BillingState}}" /></h2>
+                </ion-item>
+                <!-- BillingCity -->
+                <ion-item type="item-text-wrap">
+                    <h5><apex:outputText value="{!$ObjectType.Account.Fields.BillingCity.Label}" /></h5>
+                    <h2><apex:outputText value="{{account.BillingCity}}" /></h2>
+                </ion-item>
+                <!-- BillingStreet -->
+                <ion-item type="item-text-wrap">
+                    <h5><apex:outputText value="{!$ObjectType.Account.Fields.BillingStreet.Label}" /></h5>
+                    <h2><apex:outputText value="{{account.BillingStreet}}" /></h2>
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-view>
+</apex:page>

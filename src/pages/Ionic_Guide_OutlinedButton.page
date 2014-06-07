@@ -1,0 +1,64 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <ion-view title="Ionic Guide - Outlined Buttons">
+        <ion-nav-buttons side="left">
+            <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+        </ion-nav-buttons>
+        <ion-content class="has-header padding">
+            <div id="demo">
+                <div>
+                    <button class="button button-outline">
+                        Default
+                    </button>
+                </div>
+                <div>
+                    <button class="button button-outline button-light">
+                        button-light
+                    </button>
+                </div>
+                <div>
+                    <button class="button button-outline button-stable">
+                        button-stable
+                    </button>
+                </div>
+                <div>
+                    <button class="button button-outline button-positive">
+                        button-positive
+                    </button>
+                </div>
+                <div>
+                    <button class="button button-outline button-calm">
+                        button-calm
+                    </button>
+                </div>
+                <div>
+                    <button class="button button-outline button-balanced">
+                        button-balanced
+                    </button>
+                </div>
+                <div>
+                    <button class="button button-outline button-energized">
+                        button-energized
+                    </button>
+                </div>
+                <div>
+                    <button class="button button-outline button-assertive">
+                        button-assertive
+                    </button>
+                </div>
+                <div>
+                    <button class="button button-outline button-royal">
+                        button-royal
+                    </button>
+                </div>
+                <div>
+                    <button class="button button-outline button-dark">
+                        button-dark
+                    </button>
+                </div>
+            </div>
+        </ion-content>
+        <div class="bar bar-footer bar-positive">
+            <div class="title">Force.com</div>
+        </div>
+    </ion-view>
+</apex:page>

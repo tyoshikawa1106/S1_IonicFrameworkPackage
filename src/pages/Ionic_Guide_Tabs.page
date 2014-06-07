@@ -1,0 +1,21 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <ion-view title="Ionic Guide - Tabs">
+        <ion-nav-buttons side="left">
+            <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+        </ion-nav-buttons>
+        <ion-content class="has-header">
+            
+        </ion-content>
+        <div class="tabs tabs-positive">
+            <a class="tab-item">
+                Home
+            </a>
+            <a class="tab-item">
+                Favorites
+            </a>
+            <a class="tab-item">
+                Settings
+            </a>
+        </div>
+    </ion-view>
+</apex:page>

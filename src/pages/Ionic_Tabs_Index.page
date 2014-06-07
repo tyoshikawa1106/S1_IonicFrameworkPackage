@@ -1,0 +1,37 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <head>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"></meta>
+        <title><apex:outputText value="Ionic Demo" /></title>
+
+        <!-- Ionic/CSS -->
+        <link href="{!URLFOR($Resource.Ionic_Library, 'css/app.css')}" rel="stylesheet"></link>
+
+        <!-- Ionic/AngularJS -->
+        <script src="{!URLFOR($Resource.Ionic_Library, 'js/ionic.bundle.js')}"></script>
+
+        <!-- JavaScript -->
+        <script src="{!$Resource.Ionic_Tabs_AppJs}"></script>
+        <script src="{!$Resource.Ionic_Tabs_ControllersJs}"></script>
+        <script src="{!$Resource.Ionic_Tabs_ServicesJs}"></script>
+        
+        <!-- Remote Objects -->
+        <apex:remoteObjects >
+            <!-- Account -->
+            <apex:remoteObjectModel name="Account" jsShorthand="Account" fields="Id">
+                <apex:remoteObjectField name="Name" jsShorthand="Name" />
+                <apex:remoteObjectField name="PhotoUrl" jsShorthand="PhotoUrl" />
+            </apex:remoteObjectModel>
+        </apex:remoteObjects>
+    </head>
+    <body ng-app="sfdc1" animation="slide-left-right-ios7">
+        <!-- Navbar -->
+        <ion-nav-bar class="bar-positive nav-title-slide-ios7">
+            <ion-nav-back-button class="button-icon icon ion-chevron-left">
+                <apex:outputText value="Back" />
+            </ion-nav-back-button>
+        </ion-nav-bar>
+        <!-- NavView -->
+        <ion-nav-view></ion-nav-view>
+    </body>
+</apex:page>

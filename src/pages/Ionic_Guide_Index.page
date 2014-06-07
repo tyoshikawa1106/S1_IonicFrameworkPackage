@@ -1,0 +1,14 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <head>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"></meta>
+        <title>Ionic Guide</title>
+        <link href="{!URLFOR($Resource.Ionic_Library, 'css/app.css')}" rel="stylesheet"></link>
+        <script src="{!URLFOR($Resource.Ionic_Library, 'js/ionic.bundle.js')}"></script>
+        <script src="{!$Resource.Ionic_Guide_AppJs}"></script>
+        <script src="{!$Resource.Ionic_Guide_ControllersJs}"></script>
+    </head>
+    <body ng-app="starter">
+        <ion-nav-view></ion-nav-view>
+    </body>
+</apex:page>

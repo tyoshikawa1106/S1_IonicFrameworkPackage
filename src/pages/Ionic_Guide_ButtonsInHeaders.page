@@ -1,0 +1,17 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <ion-view title="Ionic Guide - Buttons in Headers">
+        <ion-nav-buttons side="left">
+            <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+        </ion-nav-buttons>
+        <ion-content class="has-header">
+            <div class="bar bar-header">
+                <button class="button icon ion-navicon"></button>
+                <h1 class="title">Header Buttons</h1>
+                <button class="button">Edit</button>
+            </div>
+        </ion-content>
+        <div class="bar bar-footer bar-positive">
+            <div class="title">Force.com</div>
+        </div>
+    </ion-view>
+</apex:page>

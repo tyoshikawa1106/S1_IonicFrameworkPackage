@@ -1,0 +1,15 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <ion-view title="Contacts">
+        <ion-content class="has-header">
+            <div class="list">
+                <div ng-repeat="contact in contacts">
+                    <a class="item item-avatar" href="#/tab/contacts/{{contact.Id}}">
+                        <img src="{{contact.PhotoUrl}}" />
+                        <h2><apex:outputText value="{{contact.Name}}" /></h2>
+                        <p><apex:outputText value="{{contact.Title}}" /></p>
+                    </a>
+                </div>
+            </div>
+        </ion-content>
+    </ion-view>
+</apex:page>

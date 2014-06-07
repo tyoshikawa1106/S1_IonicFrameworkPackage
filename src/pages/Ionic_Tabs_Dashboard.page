@@ -1,0 +1,7 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <ion-view title="Dashboard">
+        <ion-content has-header="true" padding="false">
+            Dashboard
+        </ion-content>
+    </ion-view>
+</apex:page>

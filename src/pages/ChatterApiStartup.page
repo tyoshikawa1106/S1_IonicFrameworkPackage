@@ -1,0 +1,56 @@
+<apex:page controller="ChatterApiStartupControler" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <head>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"></meta>
+        <title>Chatter API Startup</title>
+        <!-- JSforce -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jsforce/1.1.2/jsforce.min.js"></script>
+        <!-- Ionic/CSS -->
+        <link href="{!URLFOR($Resource.Ionic_Library, 'css/app.css')}" rel="stylesheet"></link>
+        <!-- Ionic/AngularJS -->
+        <script src="{!URLFOR($Resource.Ionic_Library, 'js/ionic.bundle.js')}"></script>
+        <!-- JavaScript -->
+        <script src="{!$Resource.ChatterApi_Startup_AppJs}"></script>
+        <script src="{!$Resource.ChatterApi_Startup_ControllersJs}"></script>
+        <script src="{!$Resource.ChatterApi_Startup_ServicesJs}"></script>
+    </head>
+    <body ng-app="sfdc1">
+        <ion-pane>
+            <ion-header-bar class="bar-positive">
+                <h1 class="title">Chatter API Startup</h1>
+            </ion-header-bar>
+            <ion-content ng-controller="ChatterApiStartupCtrl" class="padding-bottom">
+                <div ng-repeat="feedItem in feedItems" >
+                    <div class="list card col" ng-show="{{feedItem.body.text != null}}">
+                        <div class="item item-avatar">
+                            <img ng-src="{{feedItem.photoUrl}}"></img>
+                            <h2>{{feedItem.actor.name}}</h2>
+                            <p>{{feedItem.actor.title}}</p>
+                        </div>
+                        <div class="item item-body">
+                            <p>{{feedItem.body.text}}</p>
+                            <p>
+                                <a href="#" class="subdued">{{feedItem.likes.total}} Like</a>
+                                <a href="#" class="subdued">{{feedItem.comments.total}} Comments</a>
+                            </p>
+                        </div>
+                        <div class="item tabs tabs-secondary tabs-icon-left">
+                            <a class="tab-item" href="#">
+                                <i class="icon ion-thumbsup"></i>
+                                Like
+                            </a>
+                            <a class="tab-item" href="#">
+                                <i class="icon ion-chatbox"></i>
+                                Comment
+                            </a>
+                            <a class="tab-item" href="#">
+                                <i class="icon ion-share"></i>
+                                Share
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </ion-content>
+        </ion-pane>
+    </body>
+</apex:page>

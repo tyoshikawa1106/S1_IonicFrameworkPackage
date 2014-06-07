@@ -1,0 +1,76 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <head>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"></meta>
+        <title><apex:outputText value="Ionic Demo" /></title>
+
+        <!-- Ionic/CSS -->
+        <link href="{!URLFOR($Resource.Ionic_Library, 'css/app.css')}" rel="stylesheet"></link>
+
+        <!-- Ionic/AngularJS -->
+        <script src="{!URLFOR($Resource.Ionic_Library, 'js/ionic.bundle.js')}"></script>
+
+        <!-- JavaScript -->
+        <script src="{!$Resource.Ionic_Demo_AppJs}"></script>
+        <script src="{!$Resource.Ionic_Demo_ControllersJs}"></script>
+        <script src="{!$Resource.Ionic_Demo_AccountServicesJs}"></script>
+        <script src="{!$Resource.Ionic_Demo_ContactServicesJs}"></script>
+        <script src="{!$Resource.Ionic_Demo_UserServicesJs}"></script>
+        
+        <!-- Remote Objects -->
+        <apex:remoteObjects >
+            <!-- Account -->
+            <apex:remoteObjectModel name="Account" jsShorthand="Account" fields="Id">
+                <apex:remoteObjectField name="Name" jsShorthand="Name" />
+                <apex:remoteObjectField name="AccountNumber" jsShorthand="AccountNumber" />
+                <apex:remoteObjectField name="Site" jsShorthand="Site" />
+                <apex:remoteObjectField name="Type" jsShorthand="Type" />
+                <apex:remoteObjectField name="Rating" jsShorthand="Rating" />
+                <apex:remoteObjectField name="Phone" jsShorthand="Phone" />
+                <apex:remoteObjectField name="Fax" jsShorthand="Fax" />
+                <apex:remoteObjectField name="Industry" jsShorthand="Industry" />
+                <apex:remoteObjectField name="Website" jsShorthand="Website" />
+                <apex:remoteObjectField name="NumberOfEmployees" jsShorthand="NumberOfEmployees" />
+                <apex:remoteObjectField name="AnnualRevenue" jsShorthand="AnnualRevenue" />
+                <apex:remoteObjectField name="BillingCountry" jsShorthand="BillingCountry" />
+                <apex:remoteObjectField name="BillingPostalCode" jsShorthand="BillingPostalCode" />
+                <apex:remoteObjectField name="BillingState" jsShorthand="BillingState" />
+                <apex:remoteObjectField name="BillingCity" jsShorthand="BillingCity" />
+                <apex:remoteObjectField name="BillingStreet" jsShorthand="BillingStreet" />
+                <apex:remoteObjectField name="PhotoUrl" jsShorthand="PhotoUrl" />
+            </apex:remoteObjectModel>
+            <!-- Contact -->
+            <apex:remoteObjectModel name="Contact" jsShorthand="Contact" fields="Id">
+                <apex:remoteObjectField name="Name" jsShorthand="Name" />
+                <apex:remoteObjectField name="AccountId" jsShorthand="AccountId" />
+                <apex:remoteObjectField name="Department" jsShorthand="Department" />
+                <apex:remoteObjectField name="Title" jsShorthand="Title" />
+                <apex:remoteObjectField name="Phone" jsShorthand="Phone" />
+                <apex:remoteObjectField name="Fax" jsShorthand="Fax" />
+                <apex:remoteObjectField name="Email" jsShorthand="Email" />
+                <apex:remoteObjectField name="PhotoUrl" jsShorthand="PhotoUrl" />
+            </apex:remoteObjectModel>
+            <!-- User -->
+            <apex:remoteObjectModel name="User" jsShorthand="User" fields="Id">
+                <apex:remoteObjectField name="Name" jsShorthand="Name" />
+                <apex:remoteObjectField name="Department" jsShorthand="Department" />
+                <apex:remoteObjectField name="Title" jsShorthand="Title" />
+                <apex:remoteObjectField name="CommunityNickname" jsShorthand="CommunityNickname" />
+                <apex:remoteObjectField name="CompanyName" jsShorthand="CompanyName" />
+                <apex:remoteObjectField name="LanguageLocaleKey" jsShorthand="LanguageLocaleKey" />
+                <apex:remoteObjectField name="LocaleSidKey" jsShorthand="LocaleSidKey" />
+                <apex:remoteObjectField name="SmallPhotoUrl" jsShorthand="SmallPhotoUrl" />
+            </apex:remoteObjectModel>
+        </apex:remoteObjects>
+    </head>
+    <body ng-app="sfdc1" animation="slide-left-right-ios7">
+        <!-- Navbar -->
+        <ion-nav-bar class="bar-positive nav-title-slide-ios7">
+            <ion-nav-back-button class="button-icon icon ion-chevron-left">
+                <apex:outputText value="Back" />
+            </ion-nav-back-button>
+        </ion-nav-bar>
+        <!-- NavView -->
+        <ion-nav-view></ion-nav-view>
+    </body>
+</apex:page>

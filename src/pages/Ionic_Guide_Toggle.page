@@ -1,0 +1,77 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <ion-view title="Ionic Guide - Toggle">
+        <ion-nav-buttons side="left">
+            <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+        </ion-nav-buttons>
+        <ion-content class="has-header">
+            <ul class="list">
+                <li class="item item-toggle">
+                    HTML5
+                    <label class="toggle toggle-positive">
+                        <input type="checkbox" />
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </label>
+                </li>
+                <li class="item item-toggle">
+                    CSS3
+                    <label class="toggle toggle-calm">
+                        <input type="checkbox" />
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </label>
+                </li>
+                <li class="item item-toggle">
+                    Flash Player
+                    <label class="toggle toggle-balanced">
+                        <input type="checkbox" />
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </label>
+                </li>
+                <li class="item item-toggle">
+                    Java Applets
+                    <label class="toggle toggle-energized">
+                        <input type="checkbox" />
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </label>
+                </li>
+                <li class="item item-toggle">
+                    Java Scrippt
+                    <label class="toggle toggle-assertive">
+                        <input type="checkbox" />
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </label>
+                </li>
+                <li class="item item-toggle">
+                    Silverlight 
+                    <label class="toggle toggle-royal">
+                        <input type="checkbox" />
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </label>
+                </li>
+                <li class="item item-toggle">
+                    Web Components
+                    <label class="toggle toggle-dark">
+                        <input type="checkbox" />
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </ion-content>
+        <div class="bar bar-footer bar-positive">
+            <div class="title">Force.com</div>
+        </div>
+    </ion-view>
+</apex:page>

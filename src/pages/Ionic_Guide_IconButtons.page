@@ -1,0 +1,40 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <ion-view title="Ionic Guide - Icon Buttons">
+        <ion-nav-buttons side="left">
+            <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+        </ion-nav-buttons>
+        <ion-content class="has-header padding">
+            <div id="demo">
+                <div>
+                    <button class="button">
+                        <i class="icon ion-loading-c"></i> Loading...
+                    </button>
+                </div>
+                <div>
+                    <button class="button icon-left ion-home">Home</button>
+                </div>
+                <div>
+                    <button class="button icon-left ion-star button-positive">Favorites</button>
+                </div>
+                <div>
+                    <a class="button icon-right ion-chevron-right button-calm">Learn More</a>
+                </div>
+                <div>
+                    <a class="button icon-left ion-chevron-left button-clear button-dark">Back</a>
+                </div>
+                <div>
+                    <button class="button icon ion-gear-a"></button>
+                </div>
+                <div>
+                    <a class="button button-icon icon ion-settings"></a>
+                </div>
+                <div>
+                    <a class="button button-outline icon-right ion-navicon button-balanced">Reorder</a>
+                </div>
+            </div>
+        </ion-content>
+        <div class="bar bar-footer bar-positive">
+            <div class="title">Force.com</div>
+        </div>
+    </ion-view>
+</apex:page>

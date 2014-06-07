@@ -1,0 +1,42 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <head>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"></meta>
+        <title>Ionic Demo</title>
+
+        <!-- Ionic/CSS -->
+        <link href="{!URLFOR($Resource.Ionic_Library, 'css/app.css')}" rel="stylesheet"></link>
+        <!-- Ionic/AngularJS -->
+        <script src="{!URLFOR($Resource.Ionic_Library, 'js/ionic.bundle.js')}"></script>
+        <!-- JavaScript -->
+        <script src="{!$Resource.Ionic_Blank_AppJs}"></script>
+        <script src="{!$Resource.Ionic_Blank_ControllersJs}"></script>
+        <script src="{!$Resource.Ionic_Blank_ServicesJs}"></script>
+        
+        <!-- Remote Objects -->
+        <apex:remoteObjects >
+            <!-- Account -->
+            <apex:remoteObjectModel name="Account" jsShorthand="Account" fields="Id">
+                <apex:remoteObjectField name="Name" jsShorthand="Name" />
+            </apex:remoteObjectModel>
+        </apex:remoteObjects>
+    </head>
+    <body ng-app="sfdc1" animation="slide-left-right-ios7">
+        <ion-view title="Accounts" name="blank-accounts">
+            <ion-pane>
+                <ion-header-bar class=" bar-positive">
+                    <h1 class="title">Ionic Blank Starter</h1>
+                </ion-header-bar>
+                <div class="list">
+                <div ng-repeat="account in accounts">
+                    <a class="item item-avatar" href="#/blank/accounts/{{account.Id}}">
+                        <img src="{{account.PhotoUrl}}" />
+                        <h2><apex:outputText value="{{account.Name}}" /></h2>
+                        <p><apex:outputText value="{{account.Phone}}" /></p>
+                    </a>
+                </div>
+            </div>
+            </ion-pane>
+    </ion-view>
+    </body>
+</apex:page>

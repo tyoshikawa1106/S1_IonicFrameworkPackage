@@ -1,0 +1,14 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    
+    <ion-tabs class="tabs-positive tabs-icon-top">
+        
+        <ion-tab title="Dashboard" icon="icon ion-home" href="#/tab/dashboard">
+            <ion-nav-view name="tab-dashboard"></ion-nav-view>
+        </ion-tab>
+    
+        <ion-tab title="Accounts" icon="icon ion-briefcase" href="#/tab/accounts">
+            <ion-nav-view name="tab-accounts"></ion-nav-view>
+        </ion-tab>
+        
+    </ion-tabs>
+</apex:page>

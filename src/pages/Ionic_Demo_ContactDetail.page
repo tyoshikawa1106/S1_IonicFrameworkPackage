@@ -1,0 +1,36 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+	<ion-view title="{{contact.Name}}">
+		<ion-content has-header="true" padding="false">
+			<ion-list>
+				<ion-item type="item-text-wrap" >
+					<h5><apex:outputText value="{!$ObjectType.Contact.Fields.Name.Label}" /></h5>
+					<h2><apex:outputText value="{{contact.Name}}" /></h2>
+				</ion-item>
+				<ion-item type="item-text-wrap" >
+					<h5><apex:outputText value="{!$ObjectType.Contact.Fields.AccountId.Label}" /></h5>
+					<h2><apex:outputText value="{{contact.AccountId}}" /></h2>
+				</ion-item>
+				<ion-item type="item-text-wrap" >
+					<h5><apex:outputText value="{!$ObjectType.Contact.Fields.Department.Label}" /></h5>
+					<h2><apex:outputText value="{{contact.Department}}" /></h2>
+				</ion-item>
+				<ion-item type="item-text-wrap" >
+					<h5><apex:outputText value="{!$ObjectType.Contact.Fields.Title.Label}" /></h5>
+					<h2><apex:outputText value="{{contact.Title}}" /></h2>
+				</ion-item>
+				<ion-item type="item-text-wrap" >
+					<h5><apex:outputText value="{!$ObjectType.Contact.Fields.Phone.Label}" /></h5>
+					<h2><apex:outputText value="{{contact.Phone}}" /></h2>
+				</ion-item>
+				<ion-item type="item-text-wrap" >
+					<h5><apex:outputText value="{!$ObjectType.Contact.Fields.Fax.Label}" /></h5>
+					<h2><apex:outputText value="{{contact.Fax}}" /></h2>
+				</ion-item>
+				<ion-item type="item-text-wrap" >
+					<h5><apex:outputText value="{!$ObjectType.Contact.Fields.Email.Label}" /></h5>
+					<h2><apex:outputText value="{{contact.Email}}" /></h2>
+				</ion-item>
+            </ion-list>
+		</ion-content>
+	</ion-view>
+</apex:page>

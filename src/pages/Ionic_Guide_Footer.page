@@ -1,0 +1,13 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <ion-view title="Ionic Guide - Footer">
+        <ion-nav-buttons side="left">
+            <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+        </ion-nav-buttons>
+        <ion-content class="has-header">
+            
+        </ion-content>
+        <div class="bar bar-footer bar-balanced">
+            <div class="title">Footer</div>
+        </div>
+    </ion-view>
+</apex:page>
